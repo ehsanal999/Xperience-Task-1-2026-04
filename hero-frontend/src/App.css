@@ -1,42 +1,95 @@
 #root {
-  max-width: 1280px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  text-align: left;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.panel h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.25em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.panel h2 {
+  margin-top: 2em;
+  font-size: 1.2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
+.muted {
   color: #888;
+}
+
+.error {
+  color: #e5484d;
+}
+
+.callout {
+  background: rgba(100, 108, 255, 0.1);
+  border: 1px solid rgba(100, 108, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.75em 1em;
+  margin: 1em 0;
+  word-break: break-all;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5em;
+  margin: 1em 0;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75em;
+  margin: 1em 0;
+}
+
+.actions button.danger {
+  background-color: #e5484d;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 480px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 1px solid #888;
+  background: transparent;
+  color: inherit;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  font-size: 0.9em;
+}
+
+td code,
+.callout code {
+  font-size: 0.85em;
 }
